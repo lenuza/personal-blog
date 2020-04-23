@@ -21,7 +21,7 @@ body {
 
 /*********************Style Related******************/
 .header-content {
-    position: fixed;
+    /* position: fixed; */
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
@@ -117,16 +117,6 @@ footer {
     /***otherwise me.jpg won't display on Chrome small screen - phone*/
 }
 
-#malio,
-#ahtopol,
-#belmeken {
-    width: 100%;
-    object-fit: contain;
-}
-
-#toggle1,
-#toggle2,
-#toggle3,
 #accessibility {
     text-align: justify;
     text-indent: 1em;
@@ -228,7 +218,7 @@ footer {
 }
 
 #item-1 {
-    grid-area: 9 / 1 / 5 / 2;
+    grid-area: 9 / 1 / 20 / 2;
 }
 
 #item-2 {
@@ -264,6 +254,11 @@ footer {
 
     .header {
         grid-area: 1 / 1 / 2 / 3;
+        margin-bottom: 5.5em;
+    }
+
+    .header-content {
+        position: fixed;
     }
 
     .intro {
