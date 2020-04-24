@@ -36,6 +36,7 @@ body {
 nav {
     width: 100%;
 }
+
 .nav-bar {
     display: flex;
     flex-direction: column;
@@ -415,13 +416,26 @@ footer {
         flex-direction: row;
         justify-content: space-between;
         margin: 0 auto;
+        padding-top: 0.5em;
         height: auto;
         background-color: rgba(0, 10, 30, 0.9);
         color: rgb(243, 233, 208);
     }
 
+    .blog-name {
+        width: auto;
+    }
+
+    nav {
+        width: auto;
+    }
+
     .nav-bar {
         flex-direction: row;
+    }
+
+    .nav-bar-link, .nav-bar-link>form {
+        width: auto;
     }
 
     .intro {
