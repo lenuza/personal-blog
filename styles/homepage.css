@@ -1,3 +1,5 @@
+@import 'grid-media-queries.css';
+
 html .viewport {
     height: 100%;
     width: 100%;
@@ -35,9 +37,8 @@ body {
 }
 
 nav {
-    flex-grow: 2;
+    width: 100%;
 }
-
 .nav-bar {
     display: flex;
     flex-direction: column;
@@ -50,7 +51,7 @@ nav {
 
 .nav-bar>li {
     /* justify-content: center; */
-    flex-grow: 1;
+    /* flex-grow: 1; */
     align-items: stretch;
 }
 
@@ -61,6 +62,7 @@ nav {
     display: block;
     text-align: center;
     padding: 0.5em;
+    width: 100%;
 }
 
 .nav-bar-link:hover, .nav-bar-link:active {
@@ -70,26 +72,34 @@ nav {
 
 .nav-bar-link>input {
     height: 100%;
+    width: 100%;
+}
+
+.nav-bar-link>button {
+    height: 100%;
+    width: 100vw;
 }
 
 .blog-name {
-    flex-grow: 2;
+    /* flex-grow: 1; */
     margin: 0;
     padding: 0.5em;
+    text-align: center;
+    width: 100%;
 }
 
-.blog-name>a{
+/* .blog-name>a{
     text-decoration: none;
-}
+} */
 
-.social-links {
+/* .social-links {
     font-size: 1.5em;
     margin: 0.2em auto;
-}
+} */
 
-.old-posts-item {
+/* .old-posts-item {
     text-decoration: none;
-}
+} */
 
 time {
     font-style: italic;
@@ -102,18 +112,18 @@ time {
     text-indent: 1.5em;
 }
 
-.aside {
+/* .aside {
     margin: 0;
     padding: 0.3em;
-}
+} */
 
 a {
     color: inherit;
 }
 
-#item-t>a {
+/* #item-t>a {
     text-decoration: none;
-}
+} */
 
 #introduction>h2 {
     text-align: left;
@@ -150,10 +160,10 @@ footer {
     /***otherwise me.jpg won't display on Chrome small screen - phone*/
 }
 
-#accessibility {
+/* #accessibility {
     text-align: justify;
     text-indent: 1em;
-}
+} */
 
 .intro {
     padding: 0.5em;
@@ -164,12 +174,12 @@ footer {
     text-indent: 1em;
 }
 
-.items {
-    padding: 0.5em;
+/* .items { */
+    /* padding: 0.5em;
     width: auto;
-}
+/* } */
 
-#item-1a {
+/* #item-1a {
     background-color: rgba(255, 255, 255, 0.8);
     cursor: pointer;
 }
@@ -188,214 +198,32 @@ footer {
     font-size: 2em;
     background-color: rgba(200, 200, 255, 0.8);
     text-align: center;
-}
+} */
 
-#item-3 {
+/* #item-3 {
     background: url(https://user-images.githubusercontent.com/33415537/34185311-5a44c630-e52d-11e7-81c6-b1c4114323e3.jpg) rgba(150, 200, 255, 0.8);
     background-size: cover;
-    min-height: 5em;
+    min-height: 5em; */
     /***otherwise flower.jpg will display as a tiny line on small screens */
 
-}
+/* }
 
 #item-4 {
     background: url(https://user-images.githubusercontent.com/33415537/34185313-5ee156b8-e52d-11e7-92df-6bc16b791000.jpg) rgba(200, 200, 255, 0.8);
     background-size: cover;
-    min-height: 5em;
+    min-height: 5em; */
     /***otherwise free.jpg will display as a tiny line on small screens */
+/*
+} */
 
-}
-
-#item-5 {
+/* #item-5 {
     background-color: rgba(150, 200, 255, 0.8);
     color: black;
     text-indent: 1em;
-}
+} */
 
-.aside {
+/* .aside {
     background-color: rgba(150, 200, 255, 0.8);
     color: black;
-}
+}  */
 
-/***********************Grid and Media Queries Related*************************/
-
-#container {
-    width: auto;
-    font-size: 1em;
-    padding-top: 0;
-    margin: 0.2em;
-    display: grid;
-    grid-gap: 0.2em;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-}
-
-.header {
-    grid-area: 1 / 1 / 2 / 2;
-}
-
-.intro {
-    grid-area: 2 / 1 / 9 / 2;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-}
-
-#me {
-    grid-area: 1 / 1 / 2 / 2;
-    padding-left: 1em;
-}
-
-#introduction {
-    grid-area: 2 / 1 / 3 / 2;
-}
-
-#item-1 {
-    grid-area: 9 / 1 / 20 / 2;
-}
-
-#item-2 {
-    grid-area: 21/ 1 / 28/ 2;
-}
-
-#item-3 {
-    grid-area: 28 / 1 /34 / 2;
-}
-
-#item-4 {
-    grid-area: 34 / 1 / 39 / 2;
-}
-
-.aside {
-    grid-area: 39 / 1 / 50 / 2;
-}
-
-#footer {
-    grid-area: 50 / 1 / 53 / 2;
-}
-
-@media screen and (min-width: 701px) and (max-width: 1025px) {
-    #container {
-        font-size: 1em;
-        padding-top: 0;
-        margin: 0.2em;
-        display: grid;
-        grid-gap: 0.2em;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-    }
-
-    .header {
-        grid-area: 1 / 1 / 2 / 3;
-        margin-bottom: 5.5em;
-    }
-
-    .header-content {
-        position: fixed;
-    }
-
-    .nav-bar {
-        flex-direction: row;
-    }
-
-    .intro {
-        grid-area: 2 / 1 / 6 / 3;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    #introduction {
-        grid-area: 1 / 1 / 2 / 2;
-    }
-
-    #me {
-        grid-area: 1 / 2 / 2 / 3;
-    }
-
-    #item-1 {
-        grid-area: 6 / 1 / 10 / 3;
-    }
-
-    #item-2 {
-        grid-area: 10/ 1 / 14 / 2;
-    }
-
-    #item-3 {
-        grid-area: 14 / 1 / 17 / 2;
-    }
-
-    #item-4 {
-        grid-area: 10 / 2 / 12 / 3;
-    }
-
-    .aside {
-        grid-area: 12 / 2 / 17 / 3;
-    }
-
-    #footer {
-        grid-area: 17 / 1 / 18 / 3;
-    }
-}
-
-@media screen and (min-width: 1026px) {
-    #container {
-        width: 98vw;
-        height: auto;
-        min-height: 96vh;
-        /** this min-height and the above width and height are so there is no jumping when jquery executes toggle effect, still jumping on smaller screens though**/
-        font-size: 1.1em;
-        grid-gap: 0.2em;
-        display: grid;
-        grid-template-columns: repeat(8, 1fr);
-        grid-template-rows: repeat(11, 0.2fr);
-        /** grid row also played role in solving the toggle jumping disaster*/
-    }
-
-    .header {
-        grid-area: 1 / 1 / 2 / 9;
-    }
-
-    .nav-bar {
-        flex-direction: row;
-    }
-
-    .intro {
-        grid-area: 2 / 1 / 7 / 5;
-        display: grid;
-        grid-template-columns: 60% 40%;
-    }
-
-    #introduction {
-        grid-area: 1 / 1 / 2 / 2;
-    }
-
-    #me {
-        grid-area: 1 / 2 / 2 / 3;
-        padding-left: 1em;
-    }
-
-    #item-1 {
-        grid-area: 7 / 1 / 11 / 5;
-    }
-
-    #item-2 {
-        grid-area: 2 / 5 / 9 / 7;
-    }
-
-    #item-3 {
-        grid-area: 9 / 5 / 11 / 7;
-        /* OR grid-column: 5 / 7; grid-row: 9 / 11;*/
-    }
-
-    #item-4 {
-        grid-area: 2 / 7 / 5 / 9;
-    }
-
-    .aside {
-        grid-area: 5 / 7 / 11 / 9;
-    }
-
-    #footer {
-        grid-area: 11 / 1 / 12 / 9;
-    }
-}
