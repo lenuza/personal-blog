@@ -26,8 +26,7 @@ body {
     flex-direction: row;
     flex-flow: wrap;
     justify-content: space-between;
-    padding: 0.5em;
-    width: 98%;
+    width: 100%;
     margin: 0 auto;
     height: auto;
     background-color: rgba(0, 10, 30, 0.9);
@@ -39,14 +38,44 @@ nav {
     flex-grow: 2;
 }
 
-ul {
+.nav-bar {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
+
+.nav-bar>li {
+    /* justify-content: center; */
+    flex-grow: 1;
+    align-items: stretch;
+}
+
+
+.nav-bar-link {
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+    text-align: center;
+    padding: 0.5em;
+}
+
+.nav-bar-link:hover, .nav-bar-link:active {
+    background-color:  rgba(243, 233, 208, 0.9);
+    color: rgb(0, 10, 30);
+}
+
+.nav-bar-link>input {
+    height: 100%;
+}
+
 .blog-name {
     flex-grow: 2;
+    margin: 0;
+    padding: 0.5em;
 }
 
 .blog-name>a{
@@ -265,6 +294,10 @@ footer {
         position: fixed;
     }
 
+    .nav-bar {
+        flex-direction: row;
+    }
+
     .intro {
         grid-area: 2 / 1 / 6 / 3;
         display: grid;
@@ -320,6 +353,10 @@ footer {
 
     .header {
         grid-area: 1 / 1 / 2 / 9;
+    }
+
+    .nav-bar {
+        flex-direction: row;
     }
 
     .intro {
