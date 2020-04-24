@@ -1,5 +1,3 @@
-@import 'grid-media-queries.css';
-
 html .viewport {
     height: 100%;
     width: 100%;
@@ -24,7 +22,7 @@ body {
 /*********************Style Related******************/
 .header-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-flow: wrap;
     justify-content: space-between;
     width: 100%;
@@ -69,14 +67,28 @@ nav {
     color: rgb(0, 10, 30);
 }
 
-.nav-bar-link>input {
+/* .nav-bar-link>input {
     height: 100%;
     width: 100%;
 }
 
 .nav-bar-link>button {
     height: 100%;
-    width: 100vw;
+    width: 100%;
+} */
+
+.nav-bar-link>form>input {
+    border:0;
+    padding: 0;
+    width: 78%;
+    height: 2em;
+}
+
+.nav-bar-link>form>button {
+    border:0.1px solid rgb(243, 233, 208);
+    width: 20%;
+    height: 2em;
+    background-color: dimgray;
 }
 
 .blog-name {
@@ -302,17 +314,19 @@ footer {
     .header-content {
         position: fixed;
         flex-direction: row;
-        justify-content: space-between;
-        width: auto;
+        /* justify-content: space-between; */
+        /* width: auto; */
     }
 
     .blog-name {
-        flex-grow: 2;
+        flex-grow: 1;
         text-align: left;
+        width: auto;
     }
 
     nav {
         flex-grow: 2;
+        width: auto;
     }
 
     .nav-bar {
@@ -320,17 +334,23 @@ footer {
     }
 
     .nav-bar>li {
-        /* justify-content: center; */
+        justify-content: center;
         flex-grow: 1;
     }
 
     .nav-bar-link {
-        /* text-decoration: none;
+        text-decoration: none;
         font-size: 1.5em;
         display: inline-block;
         text-align: center;
-        padding: 0.5em; */
-        width: auto;
+        padding: 0.5em 0;
+        width: 100%;
+    }
+
+    .nav-bar-link>form {
+        width: 100%;
+        margin:0;
+        padding: 0;
     }
 
     .intro {
@@ -388,6 +408,16 @@ footer {
 
     .header {
         grid-area: 1 / 1 / 2 / 9;
+    }
+
+    .header-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0 auto;
+        height: auto;
+        background-color: rgba(0, 10, 30, 0.9);
+        color: rgb(243, 233, 208);
     }
 
     .nav-bar {
