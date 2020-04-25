@@ -427,7 +427,6 @@ footer {
 
 @media screen and (min-width: 1026px) {
     #container {
-        width: 98vw;
         height: auto;
         min-height: 96vh;
         /** this min-height and the above width and height are so there is no jumping when jquery executes toggle effect, still jumping on smaller screens though**/
@@ -475,16 +474,17 @@ footer {
     .main {
         grid-area: 2 / 1 / 11 / 9;
         display: grid;
+        gap: 0.5em;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
         grid-template-areas:
             'featured not-featured'
         ;
-        height: 80vh;
     }
 
     .not-featured {
         display: grid;
+        gap: 0.2em;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 45vh);
     }
@@ -503,6 +503,10 @@ footer {
 
     .blog-post-link {
         display: block;
+    }
+
+    .not-featured .blog-post-link {
+        border: 0.2em  solid  rgb(235, 235, 235);
     }
 
     .not-featured .thumbnail-content>#introduction {
@@ -524,8 +528,7 @@ footer {
 
     #item-3 {
         grid-area: 9 / 5 / 11 / 7;
-        /* OR grid-column: 5 / 7; grid-row: 9 / 11;*/
-    }
+    }*/
 
     /* #item-4 {
         grid-area: 2 / 7 / 5 / 9;
