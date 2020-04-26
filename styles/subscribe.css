@@ -60,6 +60,20 @@
     font-weight: bolder;
 }
 
+.subscribe-footer {
+    position: fixed;
+    box-sizing: border-box;
+    bottom: 0.8em;
+    left: 1%;
+    width: 98%;
+    height: 3em;
+    padding: 0.5em;
+}
+
+.footer-content {
+    margin-top: 0.2em;
+}
+
 /***********Media queries*******************************************/
 
 @media screen and (min-width: 701px) and (max-width: 1025px) {
