@@ -344,7 +344,7 @@ footer {
     }
 
     .header-content {
-        position: relative;
+        /* position: relative; */
         flex-direction: row;
         /* justify-content: space-between; */
         /* width: auto; */
@@ -371,6 +371,7 @@ footer {
     }
 
     .nav-bar-link {
+        flex-grow: 2;
         text-decoration: none;
         font-size: 1.5em;
         display: inline-block;
@@ -485,6 +486,7 @@ footer {
 
     .nav-bar-link, .nav-bar-link>form {
         width: auto;
+        flex-grow: 1;
     }
 
     .main {
