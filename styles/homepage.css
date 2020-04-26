@@ -19,6 +19,10 @@ body {
     font-family: Arial, sans-serif;
 }
 
+input::placeholder {
+    text-transform: capitalize;
+}
+
 /*********************Style Related******************/
 .header-content {
     display: flex;
