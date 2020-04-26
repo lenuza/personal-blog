@@ -137,7 +137,7 @@ a {
     text-decoration: none;
 } */
 
-#introduction>h2 {
+.featured .title {
     text-align: center;
     text-indent: 1em;
 }
@@ -503,6 +503,7 @@ footer {
 
     .blog-post-link {
         display: block;
+        text-decoration: none;
     }
 
     .not-featured .blog-post-link {
@@ -516,6 +517,10 @@ footer {
     .not-featured .thumbnail-content>#post-img {
         grid-area: image;
         padding-left: 1em;
+    }
+
+    .not-featured .title {
+        text-align: left;
     }
 
     /* #item-1 {
