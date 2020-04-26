@@ -2,26 +2,84 @@
 
 .form-container {
     margin: 5em auto;
-}
-
-form {
+    padding: 2em 0;
+    box-sizing: border-box;
+    width: 90vw;
+    background-color: rgba(150, 200, 255, 0.8);
     border: 10px solid rgba(0, 10, 30, 0.9);
     border-radius: 0.1em;
     box-shadow: 5px 10px 20px #888888;
-    margin: 10px auto;
-    padding: 20px;
-    line-height: 1.6;
-    width: 90%;
+    text-transform: uppercase;
 }
 
+.subscribe-form {
+    display: grid;
+    margin: 10px auto;
+    padding: 20px 0.1em;
+    line-height: 1.6;
+    /* width: 90vw; */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.5fr 0.5fr;
+    grid-template-areas:
+                        'label label label'
+                        'input input input'
+                        'button button button';
+}
+
+.subscribe-form-label {
+    grid-area: label;
+    width:100%;
+    text-align: center;
+}
+
+.subscribe-form-input {
+    grid-area: input;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.subscribe-button {
+    grid-area: button;
+    width: 100%;
+}
+
+.form-button {
+    display: block;
+    width: 100%;
+    background-color: dimgray;
+}
+
+/***********Media queries*******************************************/
+
 @media screen and (min-width: 701px) and (max-width: 1025px) {
-    form {
-        width: 60%;
+    .form-container {
+        width: 60vw;
+    }
+
+    .subscribe-form {
+        display: grid;
+        margin: 10px auto;
+        padding: 20px;
+        line-height: 1.6;
+        /* width: 90vw; */
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 0.5fr 0.5fr;
+        grid-template-areas:
+                            'label input input'
+                            'button button button';
     }
 }
 
 @media screen and (min-width: 1026px) {
-    form {
-        width: 30%;
+    .form-container {
+        width: 500px;
+    }
+
+    .subscribe-form {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 0.5fr 0.5fr;
+        grid-template-areas:
+                            'label input input'
+                            'button button button';
     }
 }
