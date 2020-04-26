@@ -1,0 +1,27 @@
+@import 'homepage.css';
+
+.form-container {
+    margin: 5em auto;
+}
+
+form {
+    border: 10px solid rgba(0, 10, 30, 0.9);
+    border-radius: 0.1em;
+    box-shadow: 5px 10px 20px #888888;
+    margin: 10px auto;
+    padding: 20px;
+    line-height: 1.6;
+    width: 90%;
+}
+
+@media screen and (min-width: 701px) and (max-width: 1025px) {
+    form {
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1026px) {
+    form {
+        width: 30%;
+    }
+}

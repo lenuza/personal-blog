@@ -3,14 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="styles/subscribe.css">
+    <title>Subscribe</title>
 </head>
 <body>
-    <div id="container">
+    <div id="subscribe-container">
 
         <header class="header">
             <div class="header-content">
-                <h1 class="blog-name">Personal blog</h1>
+                <h1 class="blog-name">
+                    <a href="index.html" aria-label="home page">
+                        <i class="fas fa-home"></i>
+                    </a>
+                </h1>
                 <nav>
                     <ul class="nav-bar">
                         <li>
@@ -38,15 +45,17 @@
             </div>
         </header>
 
-        <main class="main" tabindex=0>
-            <h2>Subscribe</h2>
-            <form action="">
-                <label for="email">Email:</label>
-                <input type="text" name="email" placeholder="enter your email">
-                <div>
-                    <button class="submit">subscribe</button>
-                </div>
-            </form>
+        <main class="subscribe-main" tabindex=0>
+            <div class="form-container">
+                <h2>Subscribe</h2>
+                <form action="">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" placeholder="enter your email">
+                    <div>
+                        <button class="submit">subscribe</button>
+                    </div>
+                </form>
+            </div>
         </main>
 
         <footer class="frame " id="footer" tabindex="0">
