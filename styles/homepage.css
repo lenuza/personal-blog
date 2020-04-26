@@ -1,5 +1,5 @@
 html .viewport {
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
     margin: 0;
     padding: 0;
@@ -141,6 +141,18 @@ a {
     text-align: center;
     text-indent: 1em;
 }
+.image-group {
+    background-color: floralwhite;
+    padding-top: 0.5em;
+}
+
+.image-caption {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: floralwhite;
+    text-transform: capitalize;
+    margin: 0;
+}
 
 h2,
 h3 {
@@ -191,7 +203,7 @@ footer {
 #post-img {
     display: block;
     width: 90%;
-    margin: 0.5em auto;
+    margin: auto;
     /* object-fit: contain; */
     /* min-height: 18em; */
     /***otherwise me.jpg won't display on Chrome small screen - phone*/
