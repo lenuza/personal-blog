@@ -1,22 +1,4 @@
-html .viewport {
-    height: 100vw;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-size: 1em;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
-    padding: 0;
-    background: url("https://user-images.githubusercontent.com/33415537/34185320-62d61970-e52d-11e7-81d5-58b8cc2c9d90.gif") #6DF;
-    background-size: cover;
-    text-align: justify;
-    text-justify: inter-word;
-    font-family: Arial, sans-serif;
-}
+@import 'style.css';
 
 /*********************Style Related******************/
 .header-content {
@@ -78,6 +60,19 @@ time {
 .time {
     margin-top: 0px;
     text-indent: 1.5em;
+}
+
+.author-bio {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+.author-bio>div {
+    width: 100%;
+    margin-top: 0.5em;
+    text-indent: 0;
 }
 
 .aside {

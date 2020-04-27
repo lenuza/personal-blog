@@ -1,0 +1,55 @@
+/**********General styles***************/
+
+html .viewport {
+    height: 100vw;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 1em;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    background: url("https://user-images.githubusercontent.com/33415537/34185320-62d61970-e52d-11e7-81d5-58b8cc2c9d90.gif") #6DF;
+    background-size: cover;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    background-color: rgba(0, 10, 30, 0.9);
+    color: rgb(243, 233, 208);
+    text-transform: capitalize;
+    padding: 0.5em;
+}
+
+.footer-content {
+    margin-top: 0.2em;
+}
+
+/* html .viewport { */
+    /* height: 100%; */
+    /* width: 100%;
+    margin: 0;
+    padding: 0; */
+/* } */
+
+/* body {
+    font-size: 1em;
+    width: 95vw;
+    height: auto;
+    margin: 0.2em auto;
+    padding: 0;
+    background: url("https://user-images.githubusercontent.com/33415537/34185320-62d61970-e52d-11e7-81d5-58b8cc2c9d90.gif") #6DF;
+    background-size: cover;
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: Arial, sans-serif;
+} */

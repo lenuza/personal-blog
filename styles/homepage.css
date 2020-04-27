@@ -1,23 +1,4 @@
-html .viewport {
-    /* height: 100%; */
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-size: 1em;
-    width: 95vw;
-    /***this way on iphone there is no horizontal scroll***/
-    height: auto;
-    margin: 0.2em auto;
-    padding: 0;
-    background: url("https://user-images.githubusercontent.com/33415537/34185320-62d61970-e52d-11e7-81d5-58b8cc2c9d90.gif") #6DF;
-    background-size: cover;
-    text-align: justify;
-    text-justify: inter-word;
-    font-family: Arial, sans-serif;
-}
+@import 'style.css';
 
 input::placeholder {
     text-transform: capitalize;
@@ -57,7 +38,6 @@ nav {
     align-items: stretch;
 }
 
-
 .nav-bar-link {
     text-decoration: none;
     font-size: 1.5em;
@@ -71,16 +51,6 @@ nav {
     background-color:  rgba(243, 233, 208, 0.9);
     color: rgb(0, 10, 30);
 }
-
-/* .nav-bar-link>input {
-    height: 100%;
-    width: 100%;
-}
-
-.nav-bar-link>button {
-    height: 100%;
-    width: 100%;
-} */
 
 .nav-bar-link>form>input {
     border:0;
@@ -104,19 +74,6 @@ nav {
     width: 100%;
 }
 
-/* .blog-name>a{
-    text-decoration: none;
-} */
-
-/* .social-links {
-    font-size: 1.5em;
-    margin: 0.2em auto;
-} */
-
-/* .old-posts-item {
-    text-decoration: none;
-} */
-
 time {
     font-style: italic;
     font-size: 0.8em;
@@ -128,18 +85,9 @@ time {
     text-indent: 1.5em;
 }
 
-/* .aside {
-    margin: 0;
-    padding: 0.3em;
-} */
-
 a {
     color: inherit;
 }
-
-/* #item-t>a {
-    text-decoration: none;
-} */
 
 .featured .title {
     text-align: center;
@@ -172,20 +120,6 @@ h1 {
     text-transform: uppercase;
 }
 
-footer {
-    width: 100%;
-    margin: 0 auto;
-    height: auto;
-    background-color: rgba(0, 10, 30, 0.9);
-    color: rgb(243, 233, 208);
-    text-transform: capitalize;
-}
-
-/* #accessibility {
-    text-align: justify;
-    text-indent: 1em;
-} */
-
 .blog-post-link {
     display: block;
 }
@@ -209,63 +143,7 @@ footer {
     display: block;
     width: 90%;
     margin: auto;
-    /* object-fit: contain; */
-    /* min-height: 18em; */
-    /***otherwise me.jpg won't display on Chrome small screen - phone*/
 }
-
-/* .items { */
-    /* padding: 0.5em;
-    width: auto;
-/* } */
-
-/* #item-1a {
-    background-color: rgba(255, 255, 255, 0.8);
-    cursor: pointer;
-}
-
-#item-1b {
-    background-color: rgba(255, 255, 255, 0.8);
-    cursor: pointer;
-}
-
-#item-2 {
-    background-color: rgba(0, 150, 200, 0.8);
-    cursor: pointer;
-}
-
-#item-t {
-    font-size: 2em;
-    background-color: rgba(200, 200, 255, 0.8);
-    text-align: center;
-} */
-
-/* #item-3 {
-    background: url(https://user-images.githubusercontent.com/33415537/34185311-5a44c630-e52d-11e7-81c6-b1c4114323e3.jpg) rgba(150, 200, 255, 0.8);
-    background-size: cover;
-    min-height: 5em; */
-    /***otherwise flower.jpg will display as a tiny line on small screens */
-
-/* }
-
-#item-4 {
-    background: url(https://user-images.githubusercontent.com/33415537/34185313-5ee156b8-e52d-11e7-92df-6bc16b791000.jpg) rgba(200, 200, 255, 0.8);
-    background-size: cover;
-    min-height: 5em; */
-    /***otherwise free.jpg will display as a tiny line on small screens */
-/*
-} */
-
-/* #item-5 {
-    background-color: rgba(150, 200, 255, 0.8);
-    color: black;
-    text-indent: 1em;
-} */
-
-/* .aside {
-    background-color: rgba(150, 200, 255, 0.8);
-    color: black;
-}  */
 
 /***********************Grid and Media Queries Related*************************/
 
@@ -290,39 +168,7 @@ footer {
 
 .main {
     grid-area: main;
-    /* display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto; */
 }
-
-/* #post-img {
-    grid-area: 1 / 1 / 2 / 2;
-    padding-left: 1em;
-}
-
-#introduction {
-    grid-area: 2 / 1 / 3 / 2;
-} */
-
-/* #item-1 {
-    grid-area: 9 / 1 / 20 / 2;
-}
-
-#item-2 {
-    grid-area: 21/ 1 / 28/ 2;
-}
-
-#item-3 {
-    grid-area: 28 / 1 /34 / 2;
-}
-
-#item-4 {
-    grid-area: 34 / 1 / 39 / 2;
-}
-
-.aside {
-    grid-area: 39 / 1 / 50 / 2;
-} */
 
 #footer {
     grid-area: footer;
@@ -345,10 +191,7 @@ footer {
     }
 
     .header-content {
-        /* position: relative; */
         flex-direction: row;
-        /* justify-content: space-between; */
-        /* width: auto; */
     }
 
     .blog-name {
@@ -406,37 +249,7 @@ footer {
 
     .not-featured {
         grid-area: not-featured;
-        /* display: grid;
-        grid-template-columns: 1fr;; */
     }
-
-    /* #introduction {
-        grid-area: 1 / 1 / 2 / 2;
-    }
-
-    #post-img {
-        grid-area: 1 / 2 / 2 / 3;
-    } */
-
-    /* #item-1 {
-        grid-area: 6 / 1 / 10 / 3;
-    }
-
-    #item-2 {
-        grid-area: 10/ 1 / 14 / 2;
-    }
-
-    #item-3 {
-        grid-area: 14 / 1 / 17 / 2;
-    }
-
-    #item-4 {
-        grid-area: 10 / 2 / 12 / 3;
-    }
-
-    .aside {
-        grid-area: 12 / 2 / 17 / 3;
-    } */
 
     #footer {
         grid-area: 17 / 1 / 18 / 3;
@@ -447,13 +260,11 @@ footer {
     #container {
         height: auto;
         min-height: 96vh;
-        /** this min-height and the above width and height are so there is no jumping when jquery executes toggle effect, still jumping on smaller screens though**/
         font-size: 1.1em;
         grid-gap: 0.2em;
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: repeat(11, 0.2fr);
-        /** grid row also played role in solving the toggle jumping disaster*/
     }
 
     .header {
@@ -541,26 +352,6 @@ footer {
     .not-featured .title {
         text-align: left;
     }
-
-    /* #item-1 {
-        grid-area: 7 / 1 / 11 / 5;
-    }
-
-    #item-2 {
-        grid-area: 2 / 5 / 9 / 7;
-    }
-
-    #item-3 {
-        grid-area: 9 / 5 / 11 / 7;
-    }*/
-
-    /* #item-4 {
-        grid-area: 2 / 7 / 5 / 9;
-    }
-
-    .aside {
-        grid-area: 5 / 7 / 11 / 9;
-    } */
 
     #footer {
         grid-area: 11 / 1 / 12 / 9;
