@@ -1,5 +1,4 @@
 /**********General styles***************/
-
 html .viewport {
     height: 100vw;
     width: 100vw;
@@ -34,6 +33,10 @@ h1 {
     text-transform: uppercase;
 }
 
+input::placeholder {
+    text-transform: capitalize;
+}
+
 time {
     font-style: italic;
     font-size: 0.8em;
@@ -45,22 +48,7 @@ time {
     text-indent: 1.5em;
 }
 
-/* html .viewport { */
-    /* height: 100%; */
-    /* width: 100%;
-    margin: 0;
-    padding: 0; */
-/* } */
-
-/* body {
-    font-size: 1em;
-    width: 95vw;
-    height: auto;
-    margin: 0.2em auto;
-    padding: 0;
-    background: url("https://user-images.githubusercontent.com/33415537/34185320-62d61970-e52d-11e7-81d5-58b8cc2c9d90.gif") #6DF;
-    background-size: cover;
-    text-align: justify;
-    text-justify: inter-word;
-    font-family: Arial, sans-serif;
-} */
+.blog-post-content {
+    padding: 0.5em;
+    box-sizing: border-box;
+}

@@ -2,10 +2,6 @@
 @import 'header-footer.css';
 @import 'navbar.css';
 
-input::placeholder {
-    text-transform: capitalize;
-}
-
 /*********************Style Related******************/
 .featured .title {
     text-align: center;
@@ -57,7 +53,6 @@ input::placeholder {
     padding-top: 0;
     margin: 0.2em auto;
     display: grid;
-    /* grid-gap: 0.2em; */
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     grid-template-areas:
@@ -80,9 +75,6 @@ input::placeholder {
 
 @media screen and (min-width: 701px) and (max-width: 1025px) {
     #container {
-        font-size: 1em;
-        padding-top: 0;
-        margin: 0.2em auto;
         display: grid;
         grid-gap: 0.2em;
         grid-template-columns: 1fr 1fr;
@@ -120,12 +112,11 @@ input::placeholder {
 
     .nav-bar-link {
         flex-grow: 2;
-        text-decoration: none;
-        font-size: 1.5em;
+        /* font-size: 1.5em; */
         display: inline-block;
-        text-align: center;
+        /* text-align: center; */
         padding: 0.5em 0;
-        width: 100%;
+        /* width: 100%; */
     }
 
     .nav-bar-link>form {

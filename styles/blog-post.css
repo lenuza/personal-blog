@@ -2,20 +2,6 @@
 @import 'header-footer.css';
 
 /*********************Style Related******************/
-/* .header-content {
-    display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
-    justify-content: space-between;
-    padding: 0.5em;
-    width: 98%;
-    margin: 0 auto;
-    height: auto;
-    background-color: rgba(0, 10, 30, 0.9);
-    color: rgb(243, 233, 208);
-    text-align: left;
-} */
-
 nav {
     flex-grow: 2;
 }
@@ -75,14 +61,6 @@ ul {
     padding: 0.3em;
 }
 
-/* a {
-    color: inherit;
-} */
-
-/* #item-t>a {
-    text-decoration: none;
-} */
-
 #introduction>h2 {
     text-align: left;
     text-indent: 1em;
@@ -93,13 +71,12 @@ ul {
     height: 90%;
     object-fit: contain;
     min-height: 18em;
-    /***otherwise me.jpg won't display on Chrome small screen - phone*/
 }
 
-#accessibility {
+/* #accessibility {
     text-align: justify;
     text-indent: 1em;
-}
+} */
 
 .intro {
     padding: 0.5em;
@@ -125,33 +102,17 @@ ul {
     cursor: pointer;
 }
 
-/* #item-t {
-    font-size: 2em;
-    background-color: rgba(200, 200, 255, 0.8);
-    text-align: center;
-} */
-
 #item-3 {
     background: url(https://user-images.githubusercontent.com/33415537/34185311-5a44c630-e52d-11e7-81c6-b1c4114323e3.jpg) rgba(150, 200, 255, 0.8);
     background-size: cover;
     min-height: 5em;
-    /***otherwise flower.jpg will display as a tiny line on small screens */
-
 }
 
 #item-4 {
     background: url(https://user-images.githubusercontent.com/33415537/34185313-5ee156b8-e52d-11e7-92df-6bc16b791000.jpg) rgba(200, 200, 255, 0.8);
     background-size: cover;
     min-height: 5em;
-    /***otherwise free.jpg will display as a tiny line on small screens */
-
 }
-
-/* #item-5 {
-    background-color: rgba(150, 200, 255, 0.8);
-    color: black;
-    text-indent: 1em;
-} */
 
 .aside {
     background-color: rgba(150, 200, 255, 0.8);
@@ -283,7 +244,6 @@ ul {
         height: auto;
         min-height: 96vh;
         margin: 0 auto;
-        /** this min-height and the above width and height are so there is no jumping when jquery executes toggle effect, still jumping on smaller screens though**/
         font-size: 1.1em;
         grid-gap: 0.2em;
         display: grid;
@@ -328,7 +288,6 @@ ul {
 
     #item-3 {
         grid-area: 9 / 5 / 11 / 7;
-        /* OR grid-column: 5 / 7; grid-row: 9 / 11;*/
     }
 
     #item-4 {
