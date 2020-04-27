@@ -57,12 +57,17 @@ ul {
     flex-direction: column;
     width: 100%;
     height: auto;
+    text-transform: capitalize;
 }
 
 .author-bio>div {
     width: 100%;
     margin-top: 0.5em;
     text-indent: 0;
+}
+
+.author-bio>div>span {
+    font-weight: bold;
 }
 
 .aside {
@@ -284,7 +289,6 @@ ul {
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: repeat(11, 0.2fr);
-        /** grid row also played role in solving the toggle jumping disaster*/
     }
 
     .header {
