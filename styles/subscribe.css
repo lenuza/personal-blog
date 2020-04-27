@@ -1,5 +1,6 @@
 @import 'style.css';
 @import 'homepage.css';
+@import 'header-footer.css';
 
 .form-container {
     margin: 5em auto;
@@ -63,11 +64,11 @@
 
 .subscribe-footer {
     position: fixed;
-    box-sizing: border-box;
-    bottom: 0.8em;
-    left: 1%;
-    width: 98%;
-    height: 3em;
+    /* box-sizing: border-box; */
+    bottom: 0.5em;
+    left: 0.5%;
+    width: 99%;
+    height: auto;
 }
 
 /***********Media queries*******************************************/

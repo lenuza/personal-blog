@@ -1,0 +1,38 @@
+/*******************Main Header and footer styles*************/
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    background-color: rgba(0, 10, 30, 0.9);
+    color: rgb(243, 233, 208);
+    text-align: left;
+}
+
+nav a:hover, nav a:active {
+    background-color:  rgba(243, 233, 208, 0.9);
+    color: rgb(0, 10, 30);
+}
+
+a {
+    color: inherit;
+}
+
+footer {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 auto;
+    height: auto;
+    background-color: rgba(0, 10, 30, 0.9);
+    color: rgb(243, 233, 208);
+    text-transform: capitalize;
+    padding: 0.5em;
+}
+
+.footer-content {
+    margin-top: 0.2em;
+}

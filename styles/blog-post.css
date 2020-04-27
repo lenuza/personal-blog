@@ -1,7 +1,8 @@
 @import 'style.css';
+@import 'header-footer.css';
 
 /*********************Style Related******************/
-.header-content {
+/* .header-content {
     display: flex;
     flex-direction: row;
     flex-flow: wrap;
@@ -13,7 +14,7 @@
     background-color: rgba(0, 10, 30, 0.9);
     color: rgb(243, 233, 208);
     text-align: left;
-}
+} */
 
 nav {
     flex-grow: 2;
@@ -51,17 +52,6 @@ ul {
     text-decoration: none;
 }
 
-time {
-    font-style: italic;
-    font-size: 0.8em;
-    text-indent: 1em;
-}
-
-.time {
-    margin-top: 0px;
-    text-indent: 1.5em;
-}
-
 .author-bio {
     display: flex;
     flex-direction: column;
@@ -80,40 +70,17 @@ time {
     padding: 0.3em;
 }
 
-a {
+/* a {
     color: inherit;
-}
+} */
 
-#item-t>a {
+/* #item-t>a {
     text-decoration: none;
-}
+} */
 
 #introduction>h2 {
     text-align: left;
     text-indent: 1em;
-}
-
-h2,
-h3 {
-    text-align: center;
-}
-
-h2 {
-    margin-bottom: 0px;
-}
-
-h1 {
-    font-size: 1.5em;
-    text-transform: uppercase;
-}
-
-footer {
-    width: 100%;
-    margin: 0 auto;
-    height: auto;
-    background-color: rgba(0, 10, 30, 0.9);
-    color: rgb(243, 233, 208);
-    text-transform: capitalize;
 }
 
 #me {
@@ -143,12 +110,7 @@ footer {
     width: auto;
 }
 
-#item-1a {
-    background-color: rgba(255, 255, 255, 0.8);
-    cursor: pointer;
-}
-
-#item-1b {
+#item-1 {
     background-color: rgba(255, 255, 255, 0.8);
     cursor: pointer;
 }
@@ -158,11 +120,11 @@ footer {
     cursor: pointer;
 }
 
-#item-t {
+/* #item-t {
     font-size: 2em;
     background-color: rgba(200, 200, 255, 0.8);
     text-align: center;
-}
+} */
 
 #item-3 {
     background: url(https://user-images.githubusercontent.com/33415537/34185311-5a44c630-e52d-11e7-81c6-b1c4114323e3.jpg) rgba(150, 200, 255, 0.8);
@@ -180,11 +142,11 @@ footer {
 
 }
 
-#item-5 {
+/* #item-5 {
     background-color: rgba(150, 200, 255, 0.8);
     color: black;
     text-indent: 1em;
-}
+} */
 
 .aside {
     background-color: rgba(150, 200, 255, 0.8);
