@@ -25,6 +25,10 @@
     display: block;
 }
 
+.blog-post-content {
+    text-decoration: underline;
+}
+
 .post-thumbnail {
     padding: 0.5em;
     width: auto;
