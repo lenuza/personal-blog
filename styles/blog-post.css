@@ -55,6 +55,7 @@ ul {
 
 .author-bio>div>span {
     font-weight: bold;
+    text-decoration: underline;
 }
 
 .aside {
