@@ -103,13 +103,13 @@ ul {
 }
 
 #item-3 {
-    background: url(https://user-images.githubusercontent.com/33415537/34185311-5a44c630-e52d-11e7-81c6-b1c4114323e3.jpg) rgba(150, 200, 255, 0.8);
+    background: url(../img/seaside.JPG) rgba(150, 200, 255, 0.8);
     background-size: cover;
     min-height: 5em;
 }
 
 #item-4 {
-    background: url(https://user-images.githubusercontent.com/33415537/34185313-5ee156b8-e52d-11e7-92df-6bc16b791000.jpg) rgba(200, 200, 255, 0.8);
+    background: url(../img/winter.jpg) rgba(200, 200, 255, 0.8);
     background-size: cover;
     min-height: 5em;
 }
