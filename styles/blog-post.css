@@ -13,13 +13,14 @@ ul {
     list-style: none;
     margin: 0;
 }
+
 .blog-name {
     flex-grow: 2;
     margin: 0.2em;
     font-size: 2em;
 }
 
-.blog-name>a{
+.blog-name>a {
     text-decoration: none;
 }
 
@@ -72,11 +73,6 @@ ul {
     object-fit: contain;
     min-height: 18em;
 }
-
-/* #accessibility {
-    text-align: justify;
-    text-indent: 1em;
-} */
 
 .intro {
     padding: 0.5em;
