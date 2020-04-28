@@ -193,6 +193,8 @@ ul {
         top: 0;
         left: 1%;
         margin-left: -1%;
+        z-index: 100;
+        /* otherwise in Chrome the image from author bio will jump on top*/
     }
 
     .intro {
@@ -257,6 +259,8 @@ ul {
         top: 0;
         left: 1%;
         margin-left: -1%;
+        z-index: 100;
+        /* otherwise in Chrome the image from author bio will jump on top*/
     }
 
     .intro {
@@ -272,6 +276,7 @@ ul {
     #me {
         grid-area: 1 / 2 / 2 / 3;
         padding-left: 1em;
+        /* z-index: 1; */
     }
 
     #item-1 {
